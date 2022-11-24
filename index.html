@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- zomato logo in the tab -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- poppins font by google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+      crossorigin="anonymous"
+    >
+  
+
+    <!-- importing styles.css -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Zomato Clone</title>
+  </head>
+  <body>
+    <section class="hero__section">
+        <header>
+          <nav class="navbar">
+            <a href="#" class="navbar__getApp">Get The App</a>
+            <div class="navbar__menu_container">
+              <a href="#" class="link">Investor Relations</a>
+              <a href="#" class="link">Add resutrant</a>
+              <a href="#" class="link">Log in</a>
+              <a href="#" class="link">Sign Up</a>
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        <img class="logo_size" src="./images/logo.png" alt="LOGO">
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <a href="#" class="link1">Investor Relations</a>
+                      <a href="#" class="link1">Add resutrant</a>
+                      <a href="#" class="link1">Log in</a>
+                      <a href="#" class="link1">Sign Up</a>
+                    </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="hero__main_screen">
+          <div class="hero__main_logo">
+            <img src="./images/heroSectionLogo.png" alt="Logo">
+          </div>
+          <div class="hero__main_headline">
+            Discover the best food & drinks in Jaipur
+          </div>
+          <div class="hero__search_bar">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" class="search__bar_location" placeholder="Jaipur">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="search__bar_dish" placeholder="Search for restaurant, cuisine or a dish">
+          </div>
+        </div>
+    </section>
+
+    <section class="offer__panel_container">
+
+      <div class="offer__panel_cards">
+        <img src="./images/item1.png" alt="Item1">
+        <div class="cards_subcontainer">
+          <p class="cards__subcontainer_heading">Order Online</p>
+          <p class="cards__subcontainer_desc">Stay home and order to your doorstep</p>
+        </div>
+      </div>
+
+      <div class="offer__panel_cards">
+        <img src="./images/item2.png" alt="Item2">
+        <div class="cards_subcontainer">
+          <p class="cards__subcontainer_heading">Dining</p>
+          <p class="cards__subcontainer_desc">View the city's favourite dining venues</p>
+        </div>
+      </div>
+
+      <div class="offer__panel_cards">
+        <img src="./images/item3.png" alt="Item3">
+        <div class="cards_subcontainer">
+          <p class="cards__subcontainer_heading">Nightlife and Clubs</p>
+          <p class="cards__subcontainer_desc">Explore the city's top nightlife outlets</p>
+        </div>
+      </div>
+
+    </section>
+    <div class="web_margin">
+    <section class="collection__panel_container">
+      <p class="collection__panel_title">Collections</p>
+      <div class="collection__panel_subtitle">
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Jaipur, based on trends</p>
+        <p class="collection__panel_subtitle-right">All collections in Jaipur
+        <i class="fa-sharp fa-solid fa-caret-right"></i>
+        </p>
+      </div>
+      <div class="collection__panel_gallery">
+        <div class="collection_cards card1">
+          <div class="overlay"></div>
+          <div class="collection__cards_title">Great Buffets</div>
+          <div class="collection__cards_subtitle">8 Places
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="collection_cards card2">
+          <div class="overlay"></div>
+          <div class="collection__cards_title">Royal Dining</div>
+          <div class="collection__cards_subtitle">9 Places
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="collection_cards card3">
+          <div class="overlay"></div>
+          <div class="collection__cards_title">Insta-worthy Places</div>
+          <div class="collection__cards_subtitle">13 Places
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="collection_cards card4">
+          <div class="overlay"></div>
+          <div class="collection__cards_title">Stunnning Rooftops</div>
+          <div class="collection__cards_subtitle">15 Places
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="locality__panel_container">
+      <p class="locality__panel_title">Popular localities in and around <strong>Jaipur</strong></p>
+
+      <div class="locality__tags_container">
+
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>C Scheme</p>
+            <p>227 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>Malviya Nagar</p>
+            <p>455 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>Tonk Road</p>
+            <p>103 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>Vaishali Nagar</p>
+            <p>479 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>MI Road</p>
+            <p>108 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>Mansarover</p>
+            <p>610 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>Raja Park</p>
+            <p>210 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="locality_tag">
+          <div class="locality__tag_left">
+            <p>Bani Park</p>
+            <p>94 places</p>
+          </div>
+          <div class="locality__tag_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="locality_seemore">
+            see more &nbsp
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        
+      </div>
+    </section>
+    <section class="mobile__panel_container">
+      <img src="./images/mobileBanner.png" alt="mobile banner">
+      <div class="mobile__panel_form">
+        <h1>Get the Zomato app</h1>
+        <h3>We will send you a link, open it on your phone to download the app</h3>
+        <div class="form__radio_button">
+          <div>
+            <input type="radio" name="download_app" id="email"/>
+            <label for="email">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="download_app" id="phone" />
+            <label for="phone" >Phone</label>
+          </div>
+        </div>
+        <div class="form__input_panel">
+          <input type="text" placeholder="Email" />
+          <button>Share App Link</button>
+        </div>
+        <div class="download__app_container">
+          <h5>Download app from</h5>
+          <div>
+            <img src="images/appleStore.png" alt="Apple Store" />
+            <img src="images/playStore.png" alt="Play Store" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="explore__panel_container">
+      <div class="explore__heading_bar">Explore options near me</div>
+      <div class="explore__card">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Popular cuisines near me
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <li>Bakery food near me</li>
+                <li>Beverages food near me</li>
+                <li>Biryani food near me</li>
+                <li>Burger food near me</li>
+                <li>Cafe food near me</li>
+                <li>Chinese food near me</li>
+                <li>Coffee food near me</li>
+                <li>Continental food near me</li>
+                <li>Desserts food near me</li>
+                <li>Italian food near me</li>
+                <li>Momos food near me</li>
+                <li>Mughlai food near me</li>
+                <li>North Indian food near me</li>
+                <li>Pizza food near me</li>
+                <li>Rajasthani food near me</li>
+                <li>Rolls food near me</li>
+                <li>Sandwich food near me</li>
+                <li>Shake food near me</li>
+                <li>South Indian food near me</li>
+                <li>Street food near me</li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Popular restaurant types near me
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <li>Bakeries near me</li>
+                <li>Bars near me</li>
+                <li>Beverage Shops near me</li>
+                <li>Bhojanalya near meCafés near me</li>
+                <li>Casual Dining near me</li>
+                <li>Clubs near me</li>
+                <li>Dessert Parlors near me</li>
+                <li>Dhabas near me</li>
+                <li>Fine Dining near me</li>
+                <li>Food Courts near me</li>
+                <li>Food Trucks near me</li>
+                <li>Kiosks near me</li>
+                <li>Lounges near me</li>
+                <li>Microbreweries near me</li>
+                <li>Paan Shop near me</li>
+                <li>Pubs near me</li>
+                <li>Quick Bites near me</li>
+                <li>Sweet Shops near me</li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Top Restaurant Chains
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <li>Bikanervala</li>
+                <li>Biryani Blues</li>
+                <li>Burger King</li>
+                <li>Burger Singh</li>
+                <li>Dunkin' Donuts</li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Cities We Deliver To
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <li>Delhi NCR</li>
+                <li>Kolkata</li>
+                <li>Mumbai</li>
+                <li>Bengaluru</li>
+                <li>Pune</li>
+                <li>Hyderabad</li>
+                <li>Chennai</li>
+                <li>Lucknow</li>
+                <li>Kochi</li>
+                <li>Jaipur</li>
+                <li>Ahmedabad</li>
+                <li>Chandigarh</li>
+                <li>GoaIndore</li>
+                <li>Gangtok</li>
+                <li>Nashik</li>
+                <li>Ooty</li>
+                <li>Shimla</li>
+                <li>Ludhiana</li>
+                <li>Guwahati</li>
+                <li>Amritsar</li>
+                <li>Kanpur</li>
+                <li>Allahabad</li>
+                <li>Aurangabad</li>
+                <li>Bhopal</li>
+                <li>Ranchi</li>
+                <li>Visakhapatnam</li>
+                <li>Bhubaneswar</li>
+                <li>Coimbatore</li>
+                <li>Mangalore</li>
+                <li>Vadodara</li>
+                <li>Nagpur</li>
+                <li>Agra</li>
+                <li>Dehradun</li>
+                <li>Mysore</li>
+                <li>Puducherry</li>
+                <li>Surat</li>
+                <li>Varanasi</li>
+                <li>Patna</li>
+                <li>Udaipur</li>
+                <li>Khajuraho</li>
+                <li>Neemrana</li>
+                <li>Cuttack</li>
+                <li>Trivandrum</li>
+                <li>Haridwar</li>
+                <li>Leh</li>
+                <li>Pushkar</li>
+                <li>Rajkot</li>
+                <li>Madurai</li>
+                <li>Kozhikode</li>
+                <li>Alappuzha</li>
+                <li>Thrissur</li>
+                <li>Manipal</li>
+                <li>Vijayawada</li>
+                <li>Jodhpur</li>
+                <li>Kota</li>
+                <li>Ajmer</li>
+                <li>Mussoorie</li>
+                <li>Rishikesh</li>
+                <li>Jalandhar</li>
+                <li>Jammu</li>
+                <li>Manali</li>
+                <li>Dharamshala</li>
+                <li>Raipur</li>
+                <li>See more</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer_section">
+      <footer>
+        <div class="footer__heading_bar">
+          <img src="./images/logo.png" alt="LOGO">
+          <div class="footer__heading_button">
+              <button>
+                <img src="https://flagcdn.com/w40/in.png" alt="Indian Flag" style="width:21px;height: 15px; ">
+                India
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <button>
+                <i class="fa-solid fa-globe"></i>
+                English
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+          </div>
+        </div>
+          <div class="footer__navigation_panel">
+              <div class="navigation__panel_container">
+                <p>ABOUT ZOMATAO</p>
+                <a href="#">Who We Are</a>
+                <a href="#">Blog</a>
+                <a href="#">Work With Us</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Report Fraud</a>
+                <a href="#">Contact Us</a>
+              </div>
+              <div class="navigation__panel_container">
+                <p>ZOMAVERSE</p>
+                <a href="#">Zomato</a>
+                <a href="#">Blinkit</a>
+                <a href="#">Feeding India</a>
+                <a href="#">Hyperpure</a>
+                <a href="#">Zomaland</a>
+              </div>
+              <div class="navigation__panel_container">
+                <p>FOR RESTAURANT</p>
+                <a href="#">Partner With Us</a>
+                <a href="#">Apps For You</a>
+              </div>
+              <div class="navigation__panel_container">
+                <p>FOR ENTERPRISES</p>
+                <a href="#">ZOMATO FOR WORK</a>
+              </div>
+              <div class="navigation__panel_container">
+                <p>LEARN MORE</p>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+              </div>
+              <div class="navigation__panel_container2">
+                <p>SOCIAL LINKS</p>
+                <button><i class="fa-brands fa-linkedin-in"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-twitter"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></button>
+                <button><i class="fa-brands fa-facebook"></i></button>
+              </div>
+              <div class="navigation__panel_container">
+                <img src="./images/playStore.png" alt="playstore icon" style="height:40px;width: 130px;">
+                <img src="./images/appleStore.png" alt="appleStore icon" style="height:40px;width: 130px;">
+              </div>
+        </div>
+        <div class="disclamer">
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks
+          are properties of their respective owners. 2008-2022 © Zomato™ Ltd.
+          All rights reserved.
+        </div>
+      </footer>
+    </section>
+    </div>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
